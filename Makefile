@@ -9,5 +9,5 @@ ifeq ($(UNAME_S),Linux)
 	LIBS += -lrt
 endif
 
-minunit_example: ../minunit_example.c ../minunit.h
+minunit_example: ./minunit_example.c ./minunit.h
   $(CC) $(CFLAGS) $(INCLUDE_DIRS) $(LIBS) $< -o $@
