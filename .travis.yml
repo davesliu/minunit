@@ -1,8 +1,8 @@
 language: c
 compiler:
-        - clang
+        - gcc
 env:
-        - CFLAGS="-std=c11 -coverage -O0"
+        - CFLAGS="-fprofile-arcs -ftest-coverage"
 os:
         - linux
 script:
