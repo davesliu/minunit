@@ -11,4 +11,4 @@ os:
         - linux
         - osx
 script:
-        (cd ci && make && ./minunit_example)
+        (make && ./minunit_example)
