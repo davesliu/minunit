@@ -1,9 +1,11 @@
 language: c
 compiler:
-        - gcc
+        - clang
 env:
         - CFLAGS="-std=c99"
 os:
         - linux
 script:
-        make && ./minunit_example
+  - clang -coverage -O0 minunit_example.c -o minunit_example
+  - ./minunit_example
+  - gcov minunit_example.c
