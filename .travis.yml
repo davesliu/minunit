@@ -3,8 +3,6 @@ compiler:
         - clang
 env:
         - CFLAGS="-std=c11 -coverage -O0"
-global:
-    - CODECOV_TOKEN=3068d411-a7c7-4be2-8f9c-90a61c1f5582
 os:
         - linux
 script:
