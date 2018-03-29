@@ -10,4 +10,4 @@ ifeq ($(UNAME_S),Linux)
 endif
 
 minunit_example: ./minunit_example.c ./minunit.h
-  $(CC) $(CFLAGS) $(INCLUDE_DIRS) $(LIBS) $< -o $@
+	$(CC) $(CFLAGS) $(INCLUDE_DIRS) $(LIBS) $< -o $@
