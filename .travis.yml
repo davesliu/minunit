@@ -2,10 +2,14 @@ language: c
 compiler:
         - clang
 env:
-        - CFLAGS="-std=c99"
+  global:
+    - CODECOV_TOKEN=3068d411-a7c7-4be2-8f9c-90a61c1f5582
 os:
         - linux
 script:
   - clang -coverage -O0 minunit_example.c -o minunit_example
   - ./minunit_example
   - gcov minunit_example.c
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
