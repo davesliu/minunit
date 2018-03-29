@@ -1,4 +1,5 @@
-[![Build Status](https://travis-ci.org/davesliu/minunit.svg?branch=master)](https://travis-ci.org/davesliu/minunit)
+[![Build Status](https://travis-ci.org/davesliu/minunit.svg?branch=master)](https://travis-ci.org/davesliu/minunit)[![codecov](https://codecov.io/gh/davesliu/minunit/branch/master/graph/badge.svg)](https://codecov.io/gh/davesliu/minunit)
+
 ## MinUnit
 
 Minunit is a minimal unit testing framework for C/C++ self-contained in a
